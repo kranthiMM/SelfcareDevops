@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Devops_SelfSvcPortal_Rest</groupId>
+  <artifactId>Devops_SelfSvcPortal_Rest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>devops_build_rest</name>
+  <description>This WAR file contains REST services for BUILD</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+	    <groupId>devops_services</groupId>
+	    <artifactId>devops_services</artifactId>
+	    <version>1.0</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	<dependency>
+	    <groupId>asm</groupId>
+	    <artifactId>asm</artifactId>
+	    <version>3.3.1</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	<dependency>
+	    <groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-all</artifactId>
+	    <version>1.9.0</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	 <dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-bundle</artifactId>
+	    <version>1.19</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	<dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-core</artifactId>
+	    <version>1.19</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	 <dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-json</artifactId>
+	    <version>1.19</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	<!-- <dependency>
+	    <groupId>org.glassfish.jersey.core</groupId>
+	    <artifactId>jersey-server</artifactId>
+	    <version>2.22.1</version>
+	    <scope>compile</scope>
+  	</dependency> -->
+  	<dependency>
+	    <groupId>com.ibm.team</groupId>
+	    <artifactId>com.ibm.team.repository.common_1.4.0.v20140412_0000</artifactId>
+	    <version>1.0</version>
+	    <scope>compile</scope>
+  	</dependency>
+  	<dependency>
+  <groupId>com.cloudant</groupId>
+  <artifactId>cloudant-client</artifactId>
+  <version>2.5.0</version>
+</dependency>
+<dependency>
+  <groupId>com.squareup.okhttp</groupId>
+  <artifactId>okhttp-urlconnection</artifactId>
+  <version>2.7.5</version>
+</dependency>
+<dependency>
+  <groupId>com.clianz</groupId>
+  <artifactId>bluemix-config-parser</artifactId>
+  <version>0.0.5</version>
+</dependency>
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+  </dependencies>
+</project>
